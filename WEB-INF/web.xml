@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE Web-app
+PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/Web-app_2_3.dtd">
+<Web-app>
+	<display-name>The Foundation for Afforable Education</display-name>
+	
+	<description>Website for The Foundation for Afforable Education</description>
+	
+	<servlet>
+		<servlet-name>volunteerResponse</servlet-name>
+		<description>Processes submitted volunteer data.</description>
+		<servlet-class>volunteerResponse</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>volunteerResponse</servlet-name>
+		<url-pattern>/submitVolunteerForm</url-pattern>
+	</servlet-mapping>
+	
+</Web-app>

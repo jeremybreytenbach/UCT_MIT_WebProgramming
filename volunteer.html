@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet.css"></link>
+	<script type="text/javascript" src="./scripts/writeMenuHTML.js"></script>
+	<script type="text/javascript" src="./scripts/writeFooterHTML.js"></script>
+	<script type="text/javascript" src="./scripts/helpers.js"></script>
+	
+	<title>Volunteer</title>  
+	<!-- Include navigation Menu -->
+	<script type="text/javascript" >writeMenuHTML();</script>
+</head>
+
+<body class="main">
+
+<div class="whitebackblacktext">
+    <h1 class="heading"><b>Volunteer</b></h1>
+    <p>How you can get involved</p>
+
+  <!-- Main Content -->
+  <div> 
+    <h2 class="heading">Tutoring</h2>    
+<p>
+Commit to tutoring a child for one year. 
+</p>
+<p>
+If you have a passion for teaching, have passed Grade 12
+Maths (HG) and Science (HG), and are available for at least 3 hours per week (includes Saturdays)
+please contact participation@affordableeducation.org to be partnered with a child at one of our
+training facilities today!</p>
+
+  <!-- Sign up for volunteering with form -->
+<h2 class="heading">Sign up:</h2>
+
+	<form class="formdiv" name="volunteerForm" onsubmit="return validateForm()" method="post" action="./jsp/processVolunteerData.jsp">
+		<label for="fname">First Name</label><br/>
+		<input type="text" id="fname" name="firstname" placeholder="Your name.." required><br/>
+		
+		<label for="lname">Last Name</label><br/>
+		<input type="text" id="lname" name="lastname" placeholder="Your last name.." required><br/>
+		
+		<label for="email">Email Address</label><br/>
+		<input type="text" id="email" name="emailaddress" placeholder="Your email address.." required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br/>
+		
+		<label for="contact">Contact Number</label><br/>
+		<input type="text" id="contact" name="contactnumber" placeholder="Your contact number.." required><br/>
+		
+		<label for="commentsid">Comments</label><br/>
+		<textarea  id="commentsid" name="comments"  rows="3" cols="82">Your comments..
+		</textarea><br/>
+		
+		<input type="submit" value="Submit">
+	</form><br>
+</div>
+</div>
+  
+  <!-- Footer -->
+  <script type="text/javascript" >writeFooterHTML();</script>
+  
+  <!-- 
+  <script type="text/javascript">
+	function validateForm() 
+	{
+		var fname = document.forms["volunteerForm"]["fname"].value;
+		var lname = document.forms["volunteerForm"]["lname"].value;
+		var email = document.forms["volunteerForm"]["email"].value;
+		var contact = document.forms["volunteerForm"]["contact"].value;
+		if (fname == "") || (lname == "") || (email == "") || (contact == "")
+		{
+			alert("Please fill in your Name, Last name, email and contact number.");
+			return false;
+		else
+		{
+			return true;
+		}		
+    }
+}
+  </script>
+   -->
+
+</body>
+</html>
