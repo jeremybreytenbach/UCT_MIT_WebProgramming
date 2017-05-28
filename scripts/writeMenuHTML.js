@@ -1,7 +1,7 @@
 function writeMenuHTML()
 {
 	var htmlCode = "<div>"+
-	"<table class=\"menuTable\">"+
+	"<table class=\"menutable\">"+
 	"  <tr><td><a href=\"home.html\">HOME</a></td>"+
 	"  <td><a href=\"about.html\">ABOUT</a></td>"+
 	"  <td><a href=\"casestudies.html\">CASE STUDIES</a></td>"+
@@ -10,7 +10,7 @@ function writeMenuHTML()
 	"	<div id=\"dropdownContent\" class=\"dropdownContent\">"+
 	"	<a href=\"donate.html\">DONATE</a>"+
 	"	<a href=\"volunteer.html\">VOLUNTEER</a>"+
-	"	<a href=\"events.html\">EVENTS</a>"+
+	"	<a href=\"events.jsp\">EVENTS</a>"+
 	"	</div>"+
 	"  </div>"+
 	"  </td>"+

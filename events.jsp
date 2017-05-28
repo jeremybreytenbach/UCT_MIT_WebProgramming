@@ -5,10 +5,10 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css"></link>
-	<script type="text/javascript" src="scripts/writeMenuHTML.js"></script>
-	<script type="text/javascript" src="scripts/writeFooterHTML.js"></script>
-	<script type="text/javascript" src="scripts/helpers.js"></script>
+	<link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet.css"></link>
+	<script type="text/javascript" src="./scripts/writeMenuHTML.js"></script>
+	<script type="text/javascript" src="./scripts/writeFooterHTML.js"></script>
+	<script type="text/javascript" src="./scripts/helpers.js"></script>
 	<jsp:useBean id="events" class="events.EventData" scope="session"/> 
 	
 	<title>Events</title>  
@@ -28,8 +28,8 @@
     <p>
 	Basic stationery is a necessity for learning in the classroom and at home. </p>
 	<p>As an ongoing initiative, our
-foundation has supplied over 20000 basic stationery packs to needy learners over the past 4 years.
-As part of our fifth anniversary, we aim to collect 7000 basic stationery packs for distribution to
+foundation has supplied over 20,000 basic stationery packs to needy learners over the past 4 years.
+As part of our fifth anniversary, we aim to collect 7,000 basic stationery packs for distribution to
 fifteen rural schools. You can help by hosting a stationery drive at your school, church or office on
 26 th April 2017.
 </p>
@@ -42,14 +42,15 @@ stationery drive.</p>
     <h2 class="heading">Books for Learning</h2>
     <p>
 	The Foundation for Affordable Education has partnered with Books for Learning for the past two
-	years to raise funds for books and learning aids in the classroom. Sell or buy 2 nd hand affordable
+	years to raise funds for books and learning aids in the classroom. Sell or buy 2nd hand affordable
 	textbooks online at www.booksforlearning.org and the organization will donate 10% of the profit to
-	our foundation.</p> <br />
+	our foundation.</p>
   </div>
   
   <!-- JSP Event data read -->
   <div>
-	<table class="eventsTable">
+  <h2 class="heading">Upcoming events</h2>
+	<table id="eventstable">
   <tr>
     <th>Name</th>
     <th>Date</th> 
@@ -59,6 +60,7 @@ stationery drive.</p>
   </tr>
   <%= events.csvToHtmlTable() %>
 </table>
+<br />
   </div>
   
 </div>
