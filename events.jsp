@@ -9,6 +9,7 @@
 	<script type="text/javascript" src="scripts/writeMenuHTML.js"></script>
 	<script type="text/javascript" src="scripts/writeFooterHTML.js"></script>
 	<script type="text/javascript" src="scripts/helpers.js"></script>
+	<jsp:useBean id="events" class="events.EventData" scope="session"/> 
 	
 	<title>Events</title>  
 	<!-- Include navigation Menu -->
@@ -27,7 +28,7 @@
     <p>
 	Basic stationery is a necessity for learning in the classroom and at home. </p>
 	<p>As an ongoing initiative, our
-foundation has supplied over 20 000 basic stationery packs to needy learners over the past 4 years.
+foundation has supplied over 20000 basic stationery packs to needy learners over the past 4 years.
 As part of our fifth anniversary, we aim to collect 7000 basic stationery packs for distribution to
 fifteen rural schools. You can help by hosting a stationery drive at your school, church or office on
 26 th April 2017.
@@ -44,6 +45,20 @@ stationery drive.</p>
 	years to raise funds for books and learning aids in the classroom. Sell or buy 2 nd hand affordable
 	textbooks online at www.booksforlearning.org and the organization will donate 10% of the profit to
 	our foundation.</p> <br />
+  </div>
+  
+  <!-- JSP Event data read -->
+  <div>
+	<table class="eventsTable">
+  <tr>
+    <th>Name</th>
+    <th>Date</th> 
+    <th>Time</th>	
+    <th>Venue</th>
+    <th>Description</th>
+  </tr>
+  <%= events.csvToHtmlTable() %>
+</table>
   </div>
   
 </div>

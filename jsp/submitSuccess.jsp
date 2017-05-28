@@ -3,6 +3,7 @@
 <BODY>
 You entered<BR>
 Your data was successfully caputred: <%= volunteer.getInputsvalid() %><BR>
+The data was saved to: <%= volunteer.getPathhome() %><BR>
 Message: <%= volunteer.getReturnmessage() %><BR>
 First name: <%= volunteer.getFirstname() %><BR>
 Last name: <%= volunteer.getLastname() %><BR>

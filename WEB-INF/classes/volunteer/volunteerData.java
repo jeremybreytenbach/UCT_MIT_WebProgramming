@@ -14,6 +14,7 @@ public class VolunteerData
     String comments;
 	String returnmessage;
 	boolean inputsvalid;
+	String pathhome;
 
     public void setFirstname( String value )
     {
@@ -49,6 +50,11 @@ public class VolunteerData
     {
         inputsvalid = value;
     }
+	
+    public void setPathhome( String value )
+    {
+        pathhome = value;
+    }
 
     public String getFirstname() { return firstname; }
 	
@@ -64,12 +70,14 @@ public class VolunteerData
 	
     public boolean getInputsvalid() { return inputsvalid; }
 	
+    public String getPathhome() { return pathhome; }
+	
 	// Methods
 	public static void main(String []args)
 	{	  
-		// No need for anything here at this time
+		// No need for anything here at this time...
 	}
-	
+		
 	public void runValidation()
 	{
 		boolean inputsExist = false;
@@ -132,9 +140,12 @@ public class VolunteerData
 			// Append to CSV
 			try
 			{
-				String pathHome = System.getProperty("user.home") + "\\volunteers.txt";
+				// Replace all new line characters with \n for later parsing in order to maintain csv structure
+				String replaceComments = comments.replaceAll("(\\r|\\n|\\r\\n)+", "\\\\n");
 				
-				FileWriter fileWriter = new FileWriter(pathHome,true);
+				pathhome = System.getProperty("user.home") + "\\volunteers.txt";
+				
+				FileWriter fileWriter = new FileWriter(pathhome,true);
 				PrintWriter printWriter = new PrintWriter(fileWriter);
 				
 				printWriter.print(firstname);
@@ -145,7 +156,7 @@ public class VolunteerData
 				printWriter.print(",");
 				printWriter.print(contactnumber);
 				printWriter.print(",");
-				printWriter.print(comments);
+				printWriter.println(replaceComments);
 				  
 				// Flush the output to the file
 				printWriter.flush();

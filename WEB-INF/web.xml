@@ -7,14 +7,14 @@ PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun
 	<description>Website for The Foundation for Afforable Education</description>
 	
 	<servlet>
-		<servlet-name>volunteerResponse</servlet-name>
+		<servlet-name>volunteerData</servlet-name>
 		<description>Processes submitted volunteer data.</description>
-		<servlet-class>volunteerResponse</servlet-class>
+		<servlet-class>volunteerData</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>volunteerResponse</servlet-name>
-		<url-pattern>/submitVolunteerForm</url-pattern>
+		<servlet-name>volunteerData</servlet-name>
+		<url-pattern>/processVolunteerData</url-pattern>
 	</servlet-mapping>
 	
 </Web-app>
