@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [23/May/2017:23:19:22 +0200] "GET /myapps/volunteer.html HTTP/1.1" 200 2275
+0:0:0:0:0:0:0:1 - - [23/May/2017:23:19:22 +0200] "GET /myapps/stylesheets/stylesheet.css HTTP/1.1" 200 2610
+0:0:0:0:0:0:0:1 - - [23/May/2017:23:19:22 +0200] "GET /myapps/scripts/writeMenuHTML.js HTTP/1.1" 200 759
+0:0:0:0:0:0:0:1 - - [23/May/2017:23:19:22 +0200] "GET /myapps/scripts/helpers.js HTTP/1.1" 200 827
+0:0:0:0:0:0:0:1 - - [23/May/2017:23:19:22 +0200] "GET /myapps/scripts/writeFooterHTML.js HTTP/1.1" 200 1667
+0:0:0:0:0:0:0:1 - - [23/May/2017:23:19:22 +0200] "GET /myapps/images/hope.jpg HTTP/1.1" 200 4912
+0:0:0:0:0:0:0:1 - - [23/May/2017:23:19:22 +0200] "GET /myapps/images/books.jpg HTTP/1.1" 200 3881
+0:0:0:0:0:0:0:1 - - [23/May/2017:23:19:23 +0200] "GET /favicon.ico HTTP/1.1" 200 21630

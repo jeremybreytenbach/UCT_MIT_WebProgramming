@@ -1,0 +1,3 @@
+0:0:0:0:0:0:0:1 - - [24/May/2017:17:59:00 +0200] "GET /myapps/volunteer.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [24/May/2017:17:59:00 +0200] "GET /myapps/stylesheets/stylesheet.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [24/May/2017:17:59:00 +0200] "GET /favicon.ico HTTP/1.1" 200 21630
