@@ -9,8 +9,9 @@
 	<script type="text/javascript" src="scripts/writeMenuHTML.js"></script>
 	<script type="text/javascript" src="scripts/writeFooterHTML.js"></script>
 	<script type="text/javascript" src="scripts/helpers.js"></script>
+	<jsp:useBean id="volunteer" class="volunteer.VolunteerData" scope="session"/> 
 	
-	<title>Participate</title>  
+	<title>Volunteer Sign Up</title>  
 	<!-- Include navigation Menu -->
 	<script type="text/javascript" >writeMenuHTML();</script>
 </head>
@@ -18,21 +19,23 @@
 <body class="main">
 
 <div class="whitebackblacktext">
-    <h1 class="heading"><b>Participate</b></h1>
-    <p>Foundation for Affordable Education</p>
+    <h1 class="heading"><b>Volunteer sign up</b></h1>
 
   <!-- Main Content -->
-  <div> 
-    <h2 class="heading">You Can Make a Difference</h2>
-    <ul>
-	<li><a class="linkstyle" href="donate.html">Donate</a></li>
-	<li><a class="linkstyle" href="volunteer.html">Volunteer</a></li>
-	<li><a class="linkstyle" href="events.jsp">Events</a></li>
-    </ul>
+  <div>	
+	<h3><%= volunteer.getReturnmessage() %></h3> <!-- Displays message from servelet on success or invalid inputs -->
+	<p>Here are the details you gave us:<br /><br />
+	<b>First name:</b> <%= volunteer.getFirstname() %><br />
+	<b>Last name:</b> <%= volunteer.getLastname() %><br />
+	<b>Email address:</b> <%= volunteer.getEmailaddress() %><br />
+	<b>Contact number:</b> <%= volunteer.getContactnumber() %><br />
+	<b>Comments:</b> <%= volunteer.getComments() %><br />
 	<br />
+	<b>The data was saved to server location:</b> <%= volunteer.getPathhome() %><br /> <!-- This is purely here to aid the marker so that they can find the generated file on their system -->
+	</p>
   </div>
 </div>
-  
+  	
   <!-- Footer -->
   <script type="text/javascript" >writeFooterHTML();</script>
 

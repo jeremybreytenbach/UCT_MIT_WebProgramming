@@ -17,6 +17,6 @@ volunteer.runValidation();
 
 volunteer.writeVolunteerDataToCSV();
 
-response.sendRedirect("submitSuccess.jsp");
+response.sendRedirect("../submitSuccess.jsp");
 
 %>
