@@ -184,11 +184,14 @@ a:active {
 }
 
 li {
-margin: 0 0 15px 0;
-padding-right: 15px;
+	margin: 0 0 15px 0;
+	padding-right: 15px;
 }
 
-
+#map {
+	height: 400px;
+	width: 100%;
+}
 
 
 
